@@ -3,23 +3,17 @@ package Modelo;
 public class Personas extends Centro{
 	private boolean sueldo;
 	private String nombre,dni,email;
+	private int edad;
 	
-	/**
-	 * @param idCentro
-	 * @param nombreCentro
-	 * @param localizacion
-	 * @param sueldo
-	 * @param nombre
-	 * @param dni
-	 * @param email
-	 */
+
 	public Personas(int idCentro, String nombreCentro, String localizacion, boolean sueldo, String nombre, String dni,
-			String email) {
+			String email, int edad) {
 		super(idCentro, nombreCentro, localizacion);
 		this.sueldo = sueldo;
 		this.nombre = nombre;
 		this.dni = dni;
 		this.email = email;
+		this.edad = edad;
 	}
 
 	public boolean hasSueldo() {
@@ -53,6 +47,16 @@ public class Personas extends Centro{
 	public void setEmail(String email) {
 		this.email = email;
 	} 
+	
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
 	
 	
 
